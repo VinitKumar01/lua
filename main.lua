@@ -21,6 +21,10 @@ for index, number in pairs(numbers) do -- pairs returns a pair of index and valu
 	print("Value: " .. number)
 end
 
+for i = 1, 10, 1 do -- numeric for loop similar to for (i = 1, i <= 10, i++) , here i starts from 1 got till 10 and steps 1 each iteration
+	print("i is " .. i)
+end
+
 local person = {
 	name = "Vinit",
 	age = 20,
@@ -68,3 +72,15 @@ table.remove(people, 1) -- removes the first element of the table (which is vini
 for _, prsn in pairs(people) do
 	print(prsn:getname() .. " is " .. prsn:getage() .. " years old and " .. Person.status)
 end
+
+local num = 15
+
+if 10 < num then
+	print("num is greater than 10")
+elseif 10 == num then
+	print("num is equal to 10")
+else
+	print("num is smaller than 10")
+end
+
+-- lua also have "and" and "or" operators
